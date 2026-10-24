@@ -2,5 +2,7 @@
   "name": "FOCAL · Recomendador de Cámaras",
   "description": "Recomendador inteligente de cámaras fotográficas según tu presupuesto, estilo y necesidades, diseñado sin tecnicismos para principiantes.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

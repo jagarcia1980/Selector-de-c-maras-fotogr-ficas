@@ -18,9 +18,12 @@ export const VisualShowcase: React.FC = () => {
         <div className="bg-white rounded-xl border border-zinc-200 overflow-hidden shadow-xs flex flex-col">
           <div className="relative aspect-4/3 bg-zinc-100 overflow-hidden">
             <img
-              src="/src/assets/images/camera_portrait_bokeh_1792869328533.jpg"
-              alt="Ejemplo de retrato con fondo desenfocado natural"
+              src="https://previews.123rf.com/images/antonioguillem/antonioguillem1312/antonioguillem131200082/24758947-portrait-of-a-beautiful-woman-doing-breath-exercises-with-an-autumn-unfocused-background.jpg"
+              alt="Retrato con fondo desenfocado natural"
               referrerPolicy="no-referrer"
+              onError={(e) => {
+                e.currentTarget.src = "/src/assets/images/camera_portrait_bokeh_1792869328533.jpg";
+              }}
               className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
             />
           </div>
@@ -49,9 +52,12 @@ export const VisualShowcase: React.FC = () => {
         <div className="bg-white rounded-xl border border-zinc-200 overflow-hidden shadow-xs flex flex-col">
           <div className="relative aspect-4/3 bg-zinc-100 overflow-hidden">
             <img
-              src="/src/assets/images/camera_action_wildlife_1792869328934.jpg"
-              alt="Ejemplo de foto de acción con perro corriendo y gotas de agua congeladas"
+              src="https://cdn.create.vista.com/api/media/small/296355064/stock-photo-black-brown-hairy-shepherd-dog-running-fast-splashing-water-river"
+              alt="Foto de acción con perro corriendo con gotas de agua congeladas"
               referrerPolicy="no-referrer"
+              onError={(e) => {
+                e.currentTarget.src = "/src/assets/images/camera_action_wildlife_1792869328934.jpg";
+              }}
               className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
             />
           </div>
@@ -80,9 +86,12 @@ export const VisualShowcase: React.FC = () => {
         <div className="bg-white rounded-xl border border-zinc-200 overflow-hidden shadow-xs flex flex-col">
           <div className="relative aspect-4/3 bg-zinc-100 overflow-hidden">
             <img
-              src="/src/assets/images/camera_landscape_travel_1792869328578.jpg"
-              alt="Cámara ligera capturando paisaje montañoso al amanecer"
+              src="https://media.istockphoto.com/id/517188688/es/foto/paisaje-de-monta%C3%B1a.jpg?s=612x612&w=0&k=20&c=EnSd5sJdxih_svZHscQ5Hfzr3RSOdXO9MpdmKK4CMTs="
+              alt="Paisaje montañoso al atardecer"
               referrerPolicy="no-referrer"
+              onError={(e) => {
+                e.currentTarget.src = "/src/assets/images/camera_landscape_travel_1792869328578.jpg";
+              }}
               className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
             />
           </div>
